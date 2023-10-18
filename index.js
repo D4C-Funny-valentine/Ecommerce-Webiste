@@ -23,7 +23,6 @@ app.use("/api/v1", require("./routes/users"));
 app.use("/api/v1", require("./routes/products"));
 app.use("/api/v1", require("./routes/cart"));
 app.use("/api/v1", require("./routes/order"));
-app.use("/api/v1", require("./routes/stripe"));
 
 mongoose.connection.once("open", () => {
   app.listen(PORT, () => {
