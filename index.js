@@ -18,6 +18,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // route
+app.use("/", require("./routes/root"));
 app.use("/api/v1", require("./routes/auth"));
 app.use("/api/v1", require("./routes/users"));
 app.use("/api/v1", require("./routes/products"));
